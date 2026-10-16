@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A showcase of data analysis, API engineering, and developer tooling."
+    />
+    <title>Work Showcase</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: #10141c;
+        color: #edf2f7;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 80% 0%, #193448 0, transparent 38rem),
+          #10141c;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(960px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 5rem 0 3rem;
+      }
+
+      .eyebrow {
+        color: #70dec2;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 740px;
+        margin: 0.7rem 0 1rem;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        letter-spacing: -0.06em;
+        line-height: 1.05;
+      }
+
+      .intro {
+        max-width: 620px;
+        color: #afbdcb;
+        font-size: 1.15rem;
+      }
+
+      h2 {
+        margin-top: 4rem;
+        font-size: 1.15rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+        gap: 1rem;
+        margin-top: 1.25rem;
+      }
+
+      article {
+        padding: 1.4rem;
+        border: 1px solid #2b3947;
+        border-radius: 14px;
+        background: #171e28cc;
+      }
+
+      article p {
+        margin-bottom: 0;
+        color: #afbdcb;
+      }
+
+      .tag {
+        color: #70dec2;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      footer {
+        margin-top: 4rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid #2b3947;
+        color: #afbdcb;
+      }
+
+      a {
+        color: #70dec2;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Selected work</div>
+        <h1>Practical solutions, built with care.</h1>
+        <p class="intro">
+          A collection of hands-on work across API engineering, data analysis,
+          automation, and developer tooling.
+        </p>
+      </header>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Recent projects</h2>
+        <div class="grid">
+          <article>
+            <div class="tag">API engineering</div>
+            <h3>Layered configuration service</h3>
+            <p>
+              Built and deployed a FastAPI endpoint with layered configuration,
+              typed query overrides, secret masking, and permissive CORS.
+            </p>
+            <p>
+              <a href="https://fluffy-guide-81c3a153.vercel.app/effective-config"
+                >View the live endpoint</a
+              >
+            </p>
+          </article>
+          <article>
+            <div class="tag">Data analysis</div>
+            <h3>Regional sales metrics</h3>
+            <p>
+              Parsed archived transaction data and calculated May 2025
+              Bangalore revenue from matching quantity and price records.
+            </p>
+          </article>
+          <article>
+            <div class="tag">Automation</div>
+            <h3>Archive reorganization</h3>
+            <p>
+              Wrote a shell script to classify nested files by category,
+              preserve original paths in flattened filenames, and verify the
+              result with a deterministic SHA-256 file-list hash.
+            </p>
+          </article>
+          <article>
+            <div class="tag">Data quality</div>
+            <h3>JSON migration repair</h3>
+            <p>
+              Located and corrected malformed JSON fields and separators,
+              then parsed the repaired export to validate its structure.
+            </p>
+          </article>
+          <article>
+            <div class="tag">Developer tooling</div>
+            <h3>HTTP and formatting checks</h3>
+            <p>
+              Verified response headers and JSON POST echo behavior, and
+              generated a reproducible hash for Prettier-formatted Markdown.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Contact:
+          <!--email_off-->22f3000026@ds.study.iitm.ac.in<!--/email_off-->
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
